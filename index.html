@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Documents</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="backgroud-components">
+      <img src="./img/wave1.svg" />
+      <img src="./img/wave2.svg" />
+    </div>
+
+    <div class="main">
+      <div class="logo-cont-outer">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="./img/logo.svg" alt="logo" />
+          </div>
+          <span id="logo-name">Chatter</span>
+          <span id="desc">Connect with world...</span>
+        </div>
+      </div>
+
+      <div class="form-outer-cont">
+        <div class="form-container">
+          <div class="input-container">
+            <div id="name-input-cont">
+              <div class="input-elem" id="fname-cont">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  autocomplete="off"
+                  placeholder="First-name"
+                  maxlength="20"
+                />
+                <div class="error-msg hide"></div>
+              </div>
+
+              <div class="input-elem" id="lname-cont">
+                <input
+                  type="text"
+                  name="lanme"
+                  id="lname"
+                  autocomplete="off"
+                  placeholder="Last-name"
+                  maxlength="20"
+                  autocomplete="off"
+                />
+
+                <div class="error-msg hide">Enter your last name</div>
+              </div>
+            </div>
+
+            <div class="input-elem" id="email-cont">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                autocomplete="off"
+                placeholder="Email"
+              />
+              <div class="error-msg hide">Email not valid</div>
+            </div>
+
+            <div class="input-elem" id="password-cont">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                maxlength="20"
+              />
+              <i class="far fa-eye-slash toggle-pw"></i>
+              <div class="error-msg hide">
+                Password must contains at least 6 letters
+              </div>
+            </div>
+
+            <div class="input-elem" id="conf-password-cont">
+              <input
+                type="password"
+                name="conf-password"
+                id="conf-password"
+                placeholder="Confirm your password"
+                maxlength="20"
+                autocomplete="off"
+              />
+              <i class="far fa-eye-slash toggle-pw"></i>
+              <div class="error-msg hide">Confirm your password</div>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button>Sign-in</button>
+          </div>
+
+          <div class="log-in-redirect">
+            or,
+            <a href="#">Already have account?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
